@@ -3,7 +3,6 @@
     $('#fight').click(function () {
         var hit = $('#fight_form input[name*="group1"]:checked').val();
         var block = $('#fight_form input[name*="group2"]:checked').val();
-        console.log(hit);
         var hitAndBlock = {
             "hit": hit,
             "block": block
