@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_20180917_FC_ASP_Demo_01.PlayerCharacteristics">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAEAAAAAAAAAAQAAAAAAAAgAIAAAAAAAAAA=</HashCode>
+      <FileName>AbstractClasses\PlayerCharacteristics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.AIBot">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Classes\AIBot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.Attack">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAJAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Attack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.MainGame">
+    <Position X="8" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\MainGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.User">
+    <Position X="3.5" Y="3.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.Bot">
+    <Position X="3.5" Y="5.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Bot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_20180917_FC_ASP_Demo_01.Player">
+    <Position X="0.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAABAAYAIAAAAAAAAIAIAAAAAEAAAAA=</HashCode>
+      <FileName>AbstractClasses\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="_20180917_FC_ASP_Demo_01.ILogger">
+    <Position X="10.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILogger.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="_20180917_FC_ASP_Demo_01.BodyPart">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAQIAAAABAAAAAAAAAAAAAQAAAAAABAAA=</HashCode>
+      <FileName>ENUMs\BodyPart.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,32 @@
+# .gitignore понимает регулярные выражения
+# можно указать [Bb]in - эквивалентно что напишешь Bin и bin
+
+# 20180917_FC_ASP_Demo_01.sln
+# *.sln Данный файл необходим
+
+# folder packages: Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3
+# Microsoft.Net.Compilers.1.3.2
+# Newtonsoft.Json.11.0.2
+packages/
+
+#20180917_FC_ASP_Demo_01/
+#20180917_FC_ASP_Demo_01/*.csproj
+
+# folders Bin and bin
+[Bb]in/
+
+# folder obj
+obj/
+
+# В идеале *.config тоже заливать не стоит сделать копию *.config.default и его заливать
+# *.config
+# Web.config можно не игнорить, но вынеси в отдельные файлы конфигов специфические 
+# настройки, такие как например строка подключения к БД
+
+*.txt
+*.log
+*.suo
+
+
+
+
