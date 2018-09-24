@@ -13,7 +13,7 @@ obj/
 *.txt
 *.log
 *.suo
-
+.vs/
 
 
 

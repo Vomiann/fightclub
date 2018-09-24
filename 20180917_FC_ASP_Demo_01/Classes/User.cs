@@ -18,6 +18,20 @@ namespace _20180917_FC_ASP_Demo_01
 
 
 
+
+        public void stepGameUser(string hit, string block)
+        {
+            _lastAttack = new Attack();
+            _lastAttack.hitSide = Hit(hit);            
+            BodyPart[] userBlock = Block(block);       
+            _lastAttack.blockSide1 = userBlock[0]; 
+            _lastAttack.blockSide2 = userBlock[1]; 
+        }
+
+
+
+
+
         public BodyPart Hit(string hit)
         {
             switch (hit)

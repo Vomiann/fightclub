@@ -13,16 +13,30 @@ namespace _20180917_FC_ASP_Demo_01
             _aiBot = new AIBot();
         }
 
-        //public override BodyPart Hit()
-        //{
-        //    return (BodyPart)_aiBot.SelectActionAttackBot();
-        //}
+
+        public void stepGameBot()
+        {
+            _lastAttack = new Attack();
+            _lastAttack.hitSide = Hit();
+            BodyPart[] botBlock = Block();
+            _lastAttack.blockSide1 = botBlock[0];
+            _lastAttack.blockSide2 = botBlock[1];
+        }
 
 
-        //public override BodyPart[] Block()
-        //{
-        //    return _aiBot.SelectActionDefBot();
-        //}
+
+
+
+        public BodyPart Hit()
+        {
+            return (BodyPart)_aiBot.SelectActionAttackBot();
+        }
+
+
+        public BodyPart[] Block()
+        {
+            return _aiBot.SelectActionDefBot();
+        }
 
 
 

@@ -17,25 +17,10 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
 
-
-
-        // Виртуальный метод с реализацией, а для каждого класса свой перегруженный.
+       // инициализация пользователя    
+                    
        
 
-
-
-        // TODO: В разработке
-        //public void StepGame(string hit, string block)
-        //{
-        //    _lastAttack = new Attack();        //  создается новый экземпляр для записи последней выбранной атаки           
-        //    _lastAttack.hitSide = Hit(string hit);
-
-            
-        //    //_lastAttack.hitSide = Hit(BodyPart hit);       //  записываем выбранную зону удара                                                          
-        //    BodyPart[] block = Block();       //  получаем все выбранные блоки  
-        //    _lastAttack.blockSide1 = block[0]; //  записываем 1ю выбранную зону блока
-        //    _lastAttack.blockSide2 = block[1]; //  записываем 2ю выбранную зону блока  
-        //}
 
 
         //public abstract BodyPart Hit();   // Метод нанесения удара

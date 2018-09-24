@@ -16,8 +16,11 @@ namespace _20180917_FC_ASP_Demo_01
 
         public void StepGame(string hit, string block)
         {
-            
-            //_enemy.StepGame(hit, block); 
+
+            _enemy.stepGameBot();
+            _user.stepGameUser(hit, block);
+
+            //_enemy.StepGame(hit, block);
             //_user.StepGame(hit, block); 
             
             int dmgUser = _user.ChoiceRangeDamage();
@@ -54,7 +57,7 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
 
-        private Player _user;
-        private Player _enemy;
+        private User _user;
+        private Bot _enemy;
     }
 }

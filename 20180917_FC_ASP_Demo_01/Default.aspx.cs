@@ -20,28 +20,30 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
 
-        //[System.Web.Services.WebMethod]
-        //public static string StartGame(string hit, string block)
-        //{
-        //    string jsonResult;
-        //    MainGame.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
-        //    return jsonResult;
-
-        //}
-
-
-        ////static User _user = new User(100, 2, 5, 0, "User");
-        ////static Bot _enemy = new Bot(100, 2, 5, 0, "Angry Bot");
+                       
         [System.Web.Services.WebMethod]
-        public static void StartGame(string hit, string block)
+        public static void startGame()
         {
             
 
+            _user = new User(100, 2, 5, 0, "User");
+            _enemy = new Bot(100, 2, 5, 0, "Angry Bot");            
         }
 
 
+        // Метод обработки атаки и защиты
+        [System.Web.Services.WebMethod]
+        public static string round(string hit, string block)
+        {
+            MainGame.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
+            return jsonResult;
+        }
+        
 
 
+
+
+        // TODO: Тестовый метод, в финальной версии не будет
         [System.Web.Services.WebMethod]
         public static string JsonTest(string hit, string block)
         {
@@ -54,7 +56,10 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
 
+        
 
-
+        static User _user;
+        static Bot _enemy;
+        static string jsonResult;
     }
 }
