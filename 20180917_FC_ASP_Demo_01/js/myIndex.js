@@ -40,9 +40,6 @@
         $('#fight_log p').html(' ');
     }
 
-    clearLog();
-
-
 });
 
 
