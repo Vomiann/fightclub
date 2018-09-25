@@ -1,7 +1,5 @@
-﻿.user_block,
-.center_block,
-.bot_block {
-    border: 1px solid black;
+﻿body {
+    background-color: rgb(248, 248, 248);
 }
 
 .user_block,
@@ -16,9 +14,8 @@
     margin-bottom: 5px;
 }
 
-.user_block__hp_scale,
-.bot_block__hp_scale {
-    position: relative;
+.user_block__hp__scale,
+.bot_block__hp__scale {
     height: 10px;
     background-color: lightgray;
     border-radius: 5px;
@@ -26,17 +23,13 @@
     z-index: 0;
 }
 
-.user_block__hp_scale:after,
-.bot_block__hp_scale:after {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 90%;
-        height: 100%;
-        top: 0;
-        border-radius: 5px;
-        background-color: green;
-        z-index: 1;
+.user_block__hp__scale__change,
+.bot_block__hp__scale__change {
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: green;
+    z-index: 1;
 }
 
 .user_block__hp,
@@ -56,6 +49,24 @@
     text-align: center;
 }
 
-.center_block__fight_info td:nth-child(even) {
+.btn_center {
+    text-align: center;
+}
+
+.center_block__fight_info td:nth-child(2n) {
     width: 10px;
+}
+
+#fight_log {
+    padding: 0 20px;
+}
+
+#your_turn,
+#fight_form {
+    display: none;
+}
+
+#start_game {
+    display: block;
+    margin: 100px auto;
 }
