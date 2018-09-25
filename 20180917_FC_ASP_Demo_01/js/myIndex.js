@@ -1,12 +1,14 @@
 ﻿$(function () {
 
+    const allUserHp = 100;
+    const allBotHp = 100;
+
     $('#start_game').click(function () {
         $.ajax({
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             url: "Default.aspx/startGame",
-            data: "",
             success: function () {
                 $('#start_game').css('display', 'none');
                 $('#your_turn, #fight_form').css('display', 'block');
