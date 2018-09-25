@@ -35,6 +35,7 @@ namespace _20180917_FC_ASP_Demo_01
         [System.Web.Services.WebMethod]
         public static string round(string hit, string block)
         {
+            // Test
             MainGame.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
             //HttpContext.Current.Session["hpUser"] = sesHpUser;
 
