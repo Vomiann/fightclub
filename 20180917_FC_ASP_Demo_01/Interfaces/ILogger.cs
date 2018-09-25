@@ -8,7 +8,13 @@ namespace _20180917_FC_ASP_Demo_01
 {
     public interface ILogger
     {
+        void CreateLogMessages();
+        
         void AddMessageToLog(string message);
+
+
+         
+
 
     }
 }

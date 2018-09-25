@@ -36,6 +36,9 @@ namespace _20180917_FC_ASP_Demo_01
         public static string round(string hit, string block)
         {
             MainGame.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
+            //HttpContext.Current.Session["hpUser"] = sesHpUser;
+
+
             return jsonResult;
         }
         
@@ -56,7 +59,11 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
 
-        
+        static int sesHpUser;
+
+
+
+
 
         static User _user;
         static Bot _enemy;

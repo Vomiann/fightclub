@@ -104,6 +104,8 @@
     <Compile Include="Classes\MainGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\UI.cs" />
+    <Compile Include="ENUMs\UIMsgText.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\" />

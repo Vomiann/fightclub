@@ -6,13 +6,24 @@ using System.Web;
 namespace _20180917_FC_ASP_Demo_01
 {
     class Game
-    {
-
+    {        
         public Game(ref User user, ref Bot enemy)
         {            
             _user = user;
             _enemy = enemy;
         }
+
+               
+
+        public string Winner
+        {
+            get
+            {
+              return _winner;
+            }            
+        }
+
+
 
         public void StepGame(string hit, string block)
         {
@@ -40,24 +51,27 @@ namespace _20180917_FC_ASP_Demo_01
             // Проверка на выигрыш бота
             if (_user._health == 0 && _enemy._health > 0)
             {
-                Console.WriteLine("Враг победил!!!");
+                UI.MsgWinner(UIMsgText.WinEnemy, _user, _enemy, out _winner);               
             }
 
             // Проверка на выигрыш пользователя
             if (_enemy._health == 0 && _user._health > 0)
-            {
-                Console.WriteLine("Вы победили!");
+            {                
+                UI.MsgWinner(UIMsgText.WinUser, _user, _enemy, out _winner);
             }
 
             // Проверка на ничью
             if (_user._health == 0 && _enemy._health == 0)
-            {
-                Console.WriteLine("Ничья! Оба погибли");
+            {                
+                UI.MsgWinner(UIMsgText.AllDead, _user, _enemy, out _winner);
             }
         }
 
 
         private User _user;
         private Bot _enemy;
+        private string _winner;
+        
+
     }
 }

@@ -16,13 +16,7 @@ namespace _20180917_FC_ASP_Demo_01
 
         }
 
-
-       // инициализация пользователя    
-                    
-       
-
-
-
+                              
         //public abstract BodyPart Hit();   // Метод нанесения удара
 
         //public abstract BodyPart[] Block(); // Метод выбора всех блоков (2х зон)
@@ -38,7 +32,7 @@ namespace _20180917_FC_ASP_Demo_01
         //}
 
 
-        // Метод расчета здоровья
+        
         public void updateHealth(Attack otherUserAttack, int dmgEnemy)
         {
             // проверка на прохождение урона
@@ -56,7 +50,7 @@ namespace _20180917_FC_ASP_Demo_01
             return RndAttack.Next(_minAttack, _maxAttack + 1);
         }
 
-        // Метод проверки на прохождение урона по ткущему переданному игроку
+        // Метод проверки на прохождение урона по текущему переданному игроку
         public bool CheckDamage(Attack enemy)
         {
             bool hit = false;

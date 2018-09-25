@@ -13,13 +13,19 @@ namespace _20180917_FC_ASP_Demo_01
             Game myGame = new Game(ref user, ref enemy);            
             myGame.StepGame(hit, block);
             
-
+            
             result = "result";
 
 
         }
 
-        
+
+        private bool _end;
+
+
+
+
+        // Логирование 
 
         
         // Текущий класс реализует интерфейс по преобразованию Json 
