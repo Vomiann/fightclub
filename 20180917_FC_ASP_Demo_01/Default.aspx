@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-3 user_block">
                     <div class="user_block__name">
-                        <span>User_1</span>
+                        <span>User_1 </span>
                     </div>
 
                     <div class="row user_block__hp">
