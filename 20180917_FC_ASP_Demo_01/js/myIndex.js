@@ -5,9 +5,9 @@
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: "Default.aspx/JsonTest",
+            url: "Default.aspx/startGame",
             data: "",
-            error: function () {
+            success: function () {
                 $('#start_game').css('display', 'none');
                 $('#your_turn, #fight_form').css('display', 'block');
                 $('.user_block__hp__scale__change, .bot_block__hp__scale__change').css({ 'width': '100%', 'background': 'green' });
