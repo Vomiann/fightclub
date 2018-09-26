@@ -25,6 +25,8 @@
             "block": block
         };
         var str = JSON.stringify(hitAndBlock);
+
+        blockButton();
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -33,6 +35,7 @@
             data: str,
             success: function (msg) {
                 msg = JSON.parse(msg.d);
+                unblockButton();
                 amountOfHealth(msg.hpUser, 'user');
                 amountOfHealth(msg.hpBot, 'bot');
                 logFight(msg.log);
@@ -83,6 +86,14 @@
             blockFightMenu();
             alert(winner);
         }
+    }
+
+    function blockButton() {
+        $('#fight').attr('disabled', true);
+    }
+
+    function unblockButton() {
+        $('#fight').attr('disabled', false);
     }
 
 });
