@@ -31,7 +31,7 @@
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: "Default.aspx/JsonTest",	// JsonTest - тесовый метод, который возвращает hit и block в формате Json
+            url: "Default.aspx/round",	// JsonTest - тесовый метод, который возвращает hit и block в формате Json
             data: str,
             success: function (msg) {
                 msg = JSON.parse(msg.d);
