@@ -1,7 +1,7 @@
 ﻿$(function () {
 
-    const allUserHp = 70;
-    const allBotHp = 60;
+    const allUserHp = 10;
+    const allBotHp = 10;
 
     $('#start_game').click(function () {
         $.ajax({
