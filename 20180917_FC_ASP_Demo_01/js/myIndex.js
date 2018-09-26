@@ -27,6 +27,7 @@
         var str = JSON.stringify(hitAndBlock);
 
         blockButton();
+
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -49,7 +50,7 @@
 
     function amountOfHealth(hp, characterName) {
         $('#' + characterName + '_hp').text(hp);
-        var length = hp * 100 / 50;
+        var length = hp * 100 / allUserHp;
         $('.' + characterName + '_block__hp__scale__change').css('width', length + '%');
 
         var standardOfLiving = Math.round($('.' + characterName + '_block__hp__scale__change').width());
