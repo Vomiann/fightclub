@@ -11,7 +11,7 @@
             url: "Default.aspx/startGame",
             success: function () {
                 startFight();
-                blockFightMenu();
+                unblockFightMenu();
             }
         }); 
     });
@@ -43,7 +43,8 @@
                 endGame(msg.endFight, msg.winner);
             },
             error: function () {
-                alert('Ошибка');
+                unblockButton();
+                alert('Вы не выбрали Атаку или Защиту');
             }
         });
     });
@@ -73,9 +74,14 @@
         clearLog();
     }
 
-    function blockFightMenu() {
+    function unblockFightMenu() {
         $('#start_game').css('display', 'none');
         $('#your_turn, #fight_form').css('display', 'block');
+    }
+
+    function blockFightMenu() {
+        $('#start_game').css('display', 'block');
+        $('#your_turn, #fight_form').css('display', 'none');
     }
 
     function clearLog() {
