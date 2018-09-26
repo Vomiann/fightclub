@@ -10,13 +10,23 @@ namespace _20180917_FC_ASP_Demo_01
         public static Random RndAttack = new Random();
 
 
-        public Player(int hp, int minAttack, int maxAttack, int level, string name)
-               : base(hp, minAttack, maxAttack, level, name)
+        public Player(int hp, int minAttack, int maxAttack, int currentDmgUser, int level, string name)
+               : base(hp, minAttack, maxAttack, currentDmgUser, level, name)
         {
 
         }
+                
 
-                              
+        public bool BreakDefense
+        {
+            get
+            {
+              return _breakDefense;
+            }            
+        }
+
+
+
         //public abstract BodyPart Hit();   // Метод нанесения удара
 
         //public abstract BodyPart[] Block(); // Метод выбора всех блоков (2х зон)
@@ -32,13 +42,20 @@ namespace _20180917_FC_ASP_Demo_01
         //}
 
 
-        
+
         public void updateHealth(Attack otherUserAttack, int dmgEnemy)
         {
             // проверка на прохождение урона
-            bool fOkDemadge = CheckDamage(otherUserAttack);
+            //bool fOkDemadge = CheckDamage(otherUserAttack);
 
-            if (fOkDemadge)
+            //if (fOkDemadge)
+            //{
+            //    _health -= dmgEnemy;
+            //}
+
+            _breakDefense = CheckDamage(otherUserAttack);
+
+            if (_breakDefense)
             {
                 _health -= dmgEnemy;
             }
@@ -50,7 +67,8 @@ namespace _20180917_FC_ASP_Demo_01
             return RndAttack.Next(_minAttack, _maxAttack + 1);
         }
 
-        // Метод проверки на прохождение урона по текущему переданному игроку
+        
+        // Метод проверки на прохождение урона по текущему переданному игроку 
         public bool CheckDamage(Attack enemy)
         {
             bool hit = false;
@@ -110,5 +128,10 @@ namespace _20180917_FC_ASP_Demo_01
         
 
         public Attack _lastAttack; // переменная для записи последнего выбранного действия игрока (атака/блок)
+        private bool _breakDefense;
+
+        
+
+
     }
 }

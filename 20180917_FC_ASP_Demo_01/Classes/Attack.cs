@@ -9,6 +9,6 @@ namespace _20180917_FC_ASP_Demo_01
     {
         public BodyPart hitSide;
         public BodyPart blockSide1;
-        public BodyPart blockSide2;
+        public BodyPart blockSide2;        
     }
 }

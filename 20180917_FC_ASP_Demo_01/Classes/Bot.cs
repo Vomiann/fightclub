@@ -7,8 +7,8 @@ namespace _20180917_FC_ASP_Demo_01
 {
      class Bot : Player 
     {
-        public Bot(int hp, int minAttack, int maxAttack, int level, string name)
-           : base(hp, minAttack, maxAttack, level, name)
+        public Bot(int hp, int minAttack, int maxAttack, int currentDmg, int level, string name)
+           : base(hp, minAttack, maxAttack, currentDmg, level, name)
         {
             _aiBot = new AIBot();
         }

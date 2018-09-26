@@ -6,15 +6,8 @@ using System.ComponentModel;
 
 namespace _20180917_FC_ASP_Demo_01
 {
-    public interface ILogger
+    interface ILogger
     {
-        void CreateLogMessages();
-        
-        void AddMessageToLog(string message);
-
-
-         
-
-
+        void CreateLogMessage(User user, Bot enemy);                  
     }
 }

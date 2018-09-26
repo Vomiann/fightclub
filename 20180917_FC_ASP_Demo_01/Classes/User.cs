@@ -8,8 +8,8 @@ namespace _20180917_FC_ASP_Demo_01
     class User : Player
     {
 
-        public User(int hp, int minAttack, int maxAttack, int level, string name)
-            : base(hp, minAttack, maxAttack, level, name)
+        public User(int hp, int minAttack, int maxAttack, int currentDmg, int level, string name)
+            : base(hp, minAttack, maxAttack, currentDmg, level, name)
         {
 
         }

@@ -26,8 +26,8 @@ namespace _20180917_FC_ASP_Demo_01
         {
             
 
-            _user = new User(100, 2, 5, 0, "User");
-            _enemy = new Bot(100, 2, 5, 0, "Angry Bot");            
+            _user = new User(100, 2, 5, 0, 0, "User");
+            _enemy = new Bot(100, 2, 5, 0, 0, "Angry Bot");            
         }
 
 
@@ -35,8 +35,10 @@ namespace _20180917_FC_ASP_Demo_01
         [System.Web.Services.WebMethod]
         public static string round(string hit, string block)
         {
-            // Test
-            MainGame.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
+            MainGame mg = new MainGame();
+            mg.StartGame(hit, block, ref _user, ref _enemy, out jsonResult);
+
+            
             //HttpContext.Current.Session["hpUser"] = sesHpUser;
 
 
@@ -51,21 +53,15 @@ namespace _20180917_FC_ASP_Demo_01
         [System.Web.Services.WebMethod]
         public static string JsonTest(string hit, string block)
         {
-            
-            JsonDataPlayers data = new JsonDataPlayers() { hpUser = 10, hpBot = 10, log="Test", end = false, winner = string.Empty };
+
+            JsonDataPlayers data = new JsonDataPlayers() { hpUser = 10, hpBot = 10, log = "Test", endFight = false, winner = string.Empty };
 
             string jsonData = JsonConvert.SerializeObject(data);
             return jsonData;
-
         }
 
 
-        static int sesHpUser;
-
-
-
-
-
+       
         static User _user;
         static Bot _enemy;
         static string jsonResult;

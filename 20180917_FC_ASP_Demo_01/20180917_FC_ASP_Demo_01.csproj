@@ -98,7 +98,7 @@
     </Compile>
     <Compile Include="Classes\Game.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
-    <Compile Include="JsonDataPlayers.cs" />
+    <Compile Include="Classes\JsonDataPlayers.cs" />
     <Compile Include="AbstractClasses\Player.cs" />
     <Compile Include="AbstractClasses\PlayerCharacteristics.cs" />
     <Compile Include="Classes\MainGame.cs" />
