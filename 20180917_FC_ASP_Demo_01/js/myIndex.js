@@ -1,7 +1,7 @@
 ﻿$(function () {
 
-    const allUserHp = 100;
-    const allBotHp = 100;
+    const allUserHp = 70;
+    const allBotHp = 60;
 
     $('#start_game').click(function () {
         $.ajax({
@@ -10,11 +10,8 @@
             contentType: "application/json; charset=utf-8",
             url: "Default.aspx/startGame",
             success: function () {
-                $('#start_game').css('display', 'none');
-                $('#your_turn, #fight_form').css('display', 'block');
-                $('.user_block__hp__scale__change, .bot_block__hp__scale__change').css({ 'width': '100%', 'background': 'green' });
-                $('#user_hp, #bot_hp').text('50');
-                clearLog();
+                startFight();
+                blockFightMenu();
             }
         }); 
     });
@@ -39,6 +36,10 @@
                 amountOfHealth(msg.hpUser, 'user');
                 amountOfHealth(msg.hpBot, 'bot');
                 logFight(msg.log);
+                endGame(msg.endFight, msg.winner);
+            },
+            error: function () {
+                alert('Ошибка');
             }
         });
     });
@@ -55,15 +56,33 @@
         } else if (standardOfLiving <= 78) {
             colorScale.css('background-color', 'red');
         }
-
     }
 
     function logFight(newText) {
         $('#fight_log').prepend('<p>' + newText + '</p>');
     }
 
+    function startFight() {
+        $('.user_block__hp__scale__change, .bot_block__hp__scale__change').css({ 'width': '100%', 'background': 'green' });
+        $('#user_hp, #all_user_hp').text(allUserHp);
+        $('#bot_hp, #all_bot_hp').text(allBotHp);
+        clearLog();
+    }
+
+    function blockFightMenu() {
+        $('#start_game').css('display', 'none');
+        $('#your_turn, #fight_form').css('display', 'block');
+    }
+
     function clearLog() {
         $('#fight_log p').html('');
+    }
+
+    function endGame(endFight, winner) {
+        if (endFight === true) {
+            blockFightMenu();
+            alert(winner);
+        }
     }
 
 });

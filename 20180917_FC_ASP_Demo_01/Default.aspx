@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-3 user_block">
                     <div class="user_block__name">
-                        <span>User_1 </span>
+                        <span>User_1</span>
                     </div>
 
                     <div class="row user_block__hp">
@@ -25,7 +25,7 @@
 							</div>
                         </div>
                         <div class="col-md-3">
-                            <span><span id="user_hp">45</span>/50</span>
+                            <span id="user_hp"></span>/<span id="all_user_hp"></span>
                         </div>
                     </div>
 
@@ -142,7 +142,7 @@
 							</div>
                         </div>
                         <div class="col-md-3">
-                            <span><span id="bot_hp">45</span>/50</span>
+                            <span id="bot_hp"></span>/<span id="all_bot_hp"></span>
                         </div>
                     </div>
 
