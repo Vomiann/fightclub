@@ -42,7 +42,8 @@
                 amountOfHealth(msg.hpUser, 'user');
                 amountOfHealth(msg.hpBot, 'bot');
                 yourTurn();
-                logFight(msg.log);
+                userLogFight(msg.userLog);
+                botLogFight(msg.botLog);
                 endGame(msg.endFight, msg.winner);
             },
             error: function () {
@@ -66,7 +67,11 @@
         }
     }
 
-    function logFight(newText) {
+    function userLogFight(newText) {
+        $('#fight_log').prepend('<p>' + newText + '</p>');
+    }
+
+    function botLogFight(newText) {
         $('#fight_log').prepend('<p>' + newText + '</p>');
     }
 
