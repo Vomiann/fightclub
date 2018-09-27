@@ -14,7 +14,8 @@ namespace _20180917_FC_ASP_Demo_01
             _maxAttack = maxAttack;
             _level = level;
             _name = name;
-            _currentDmg = currentDmg;           
+            _currentDmg = currentDmg;
+            _startHP = hp; 
         }
 
 
@@ -23,6 +24,7 @@ namespace _20180917_FC_ASP_Demo_01
         public int _maxAttack; 
         public int _level;     
         public string _name;
-        public int _currentDmg;        
+        public int _currentDmg;
+        public int _startHP;
     }
 }

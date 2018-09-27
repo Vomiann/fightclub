@@ -44,20 +44,21 @@ namespace _20180917_FC_ASP_Demo_01
 
 
         public void updateHealth(Attack otherUserAttack, int dmgEnemy)
-        {
-            // проверка на прохождение урона
-            //bool fOkDemadge = CheckDamage(otherUserAttack);
-
-            //if (fOkDemadge)
-            //{
-            //    _health -= dmgEnemy;
-            //}
-
+        {           
             _breakDefense = CheckDamage(otherUserAttack);
+
+            int currentHP = _health;
 
             if (_breakDefense)
             {
-                _health -= dmgEnemy;
+                if ( !((currentHP -= dmgEnemy) < 0) )
+                {
+                  _health -= dmgEnemy;                   
+                }
+                else
+                {
+                    _health = 0;
+                }
             }
         }
 

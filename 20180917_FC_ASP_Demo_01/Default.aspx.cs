@@ -26,8 +26,8 @@ namespace _20180917_FC_ASP_Demo_01
         {
             
 
-            _user = new User(10, 3, 4, 0, 0, "User");
-            _enemy = new Bot(10, 3, 4, 0, 0, "Angry Bot");            
+            _user = new User(10, 3, 4, 0, 0, "User_1");
+            _enemy = new Bot(10, 3, 4, 0, 0, "Bot_1");            
         }
 
 

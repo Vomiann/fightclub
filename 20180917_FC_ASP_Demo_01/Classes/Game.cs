@@ -51,8 +51,8 @@ namespace _20180917_FC_ASP_Demo_01
             user._currentDmg = user.ChoiceRangeDamage();
             enemy._currentDmg = enemy.ChoiceRangeDamage();
 
-            user.updateHealth(enemy._lastAttack, user._currentDmg);
-            enemy.updateHealth(user._lastAttack, enemy._currentDmg);
+            user.updateHealth(enemy._lastAttack, enemy._currentDmg);
+            enemy.updateHealth(user._lastAttack, user._currentDmg);
 
             CheckWinner(ref user, ref enemy);
         }

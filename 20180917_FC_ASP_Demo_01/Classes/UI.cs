@@ -12,10 +12,10 @@ namespace _20180917_FC_ASP_Demo_01
             switch (str)
             {               
                 case UIMsgText.WinEnemy:
-                     winner = enemy._name + "победил!";
+                     winner = enemy._name +" "+ "победил!";
                     break;
                 case UIMsgText.WinUser:
-                    winner = user._name + "победил!";
+                    winner = user._name + " " + "победил!";
                     break;
                 case UIMsgText.AllDead:
                     winner = "Ничья! Оба героя погибли!";
