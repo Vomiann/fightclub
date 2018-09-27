@@ -3,7 +3,7 @@
   <Class Name="_20180917_FC_ASP_Demo_01.PlayerCharacteristics">
     <Position X="0.5" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAEAAAAAAAAAAQAAAAAAAAgAIAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAEAAAAAAAAAAQACAAAAAAgAIAAEAAAAAAA=</HashCode>
       <FileName>AbstractClasses\PlayerCharacteristics.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -22,37 +22,38 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_20180917_FC_ASP_Demo_01.MainGame">
-    <Position X="8" Y="2.75" Width="1.5" />
+    <Position X="6" Y="3" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAEAAAUAAAAAhAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\MainGame.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_20180917_FC_ASP_Demo_01.User">
-    <Position X="3.5" Y="3.25" Width="1.25" />
+    <Position X="3.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_20180917_FC_ASP_Demo_01.Bot">
-    <Position X="3.5" Y="5.25" Width="1.25" />
+    <Position X="3.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
       <FileName>Classes\Bot.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_20180917_FC_ASP_Demo_01.Player">
     <Position X="0.5" Y="3.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAABAAYAIAAAAAAAAIAIAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAABAAAAAAAAABAAAAIAAAAAQAAIAIAAAAAEAAAAA=</HashCode>
       <FileName>AbstractClasses\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="_20180917_FC_ASP_Demo_01.ILogger">
     <Position X="10.75" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ILogger.cs</FileName>
     </TypeIdentifier>
   </Interface>

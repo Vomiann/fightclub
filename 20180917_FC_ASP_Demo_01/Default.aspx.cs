@@ -50,15 +50,15 @@ namespace _20180917_FC_ASP_Demo_01
 
 
         // TODO: Тестовый метод, в финальной версии не будет
-        [System.Web.Services.WebMethod]
-        public static string JsonTest(string hit, string block)
-        {
+        //[System.Web.Services.WebMethod]
+        //public static string JsonTest(string hit, string block)
+        //{
 
-            JsonDataPlayers data = new JsonDataPlayers() { hpUser = 10, hpBot = 10, log = "Test", endFight = false, winner = string.Empty };
+        //    JsonDataPlayers data = new JsonDataPlayers() { hpUser = 10, hpBot = 10, log = "Test", endFight = false, winner = string.Empty };
 
-            string jsonData = JsonConvert.SerializeObject(data);
-            return jsonData;
-        }
+        //    string jsonData = JsonConvert.SerializeObject(data);
+        //    return jsonData;
+        //}
 
 
        
