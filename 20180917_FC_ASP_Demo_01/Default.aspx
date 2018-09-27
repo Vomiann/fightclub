@@ -41,7 +41,7 @@
 
                 <div class="col-md-6 center_block">
                     <h3>Поединок</h3>
-					<p id="your_turn">Ваш ход</p>
+					<p id="your_turn"></p>
 					<input type="button" id="start_game" value="Начать бой">
                     <div class="row">
                         <div id="fight_form">

@@ -58,7 +58,10 @@
 }
 
 #fight_log {
+    max-height: 200px;
     padding: 0 20px;
+    overflow: auto;
+    word-wrap: break-word;
 }
 
 #your_turn,

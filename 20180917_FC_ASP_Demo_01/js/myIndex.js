@@ -12,6 +12,7 @@
             success: function () {
                 startFight();
                 unblockFightMenu();
+                yourTurn();
             }
         }); 
     });
@@ -27,6 +28,7 @@
         var str = JSON.stringify(hitAndBlock);
 
         blockButton();
+        oppMove();
 
         $.ajax({
             type: "POST",
@@ -39,6 +41,7 @@
                 unblockButton();
                 amountOfHealth(msg.hpUser, 'user');
                 amountOfHealth(msg.hpBot, 'bot');
+                yourTurn();
                 logFight(msg.log);
                 endGame(msg.endFight, msg.winner);
             },
@@ -77,6 +80,7 @@
     function unblockFightMenu() {
         $('#start_game').css('display', 'none');
         $('#your_turn, #fight_form').css('display', 'block');
+        $('input:checked').prop('checked', false);
     }
 
     function blockFightMenu() {
@@ -101,6 +105,14 @@
 
     function unblockButton() {
         $('#fight').attr('disabled', false);
+    }
+
+    function yourTurn() {
+        $('#your_turn').text('Ваш ход');
+    }
+
+    function oppMove() {
+        $('#your_turn').text('Ожидание хода противника');
     }
 
 });
