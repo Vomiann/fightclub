@@ -164,28 +164,5 @@
 
 
 
-<!-- Old version  -->
-
-<%--<!DOCTYPE html>
-
-<html>
-    <head>
-        <title></title>        
-    </head>
-    <body style = "font-family:Arial; font-size:10pt">
-        <form id="form1">
-            <div>               
-               <input id="btnGetTime" type="button" value="Show Current Time" onclick ="ShowCurrentTime()" />
-            </div>
-        </form>       
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="js/index.js"></script>
-    </body>
-</html>--%>
-
-
-
-
-
 
 

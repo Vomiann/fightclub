@@ -34,7 +34,7 @@
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: "Default.aspx/round",	// JsonTest - тесовый метод, который возвращает hit и block в формате Json
+            url: "Default.aspx/round",
             data: str,
             success: function (msg) {
                 msg = JSON.parse(msg.d);
@@ -47,6 +47,7 @@
                 endGame(msg.endFight, msg.winner);
             },
             error: function () {
+                yourTurn();
                 unblockButton();
                 alert('Вы не выбрали Атаку или Защиту');
             }
@@ -121,38 +122,5 @@
     }
 
 });
-
-
-
-//$(function () {
-//        $('#fight').click(function () {       
-//            var hit = $('#fight_form input[name*="group1"]:checked').val();
-//            var block = $('#fight_form input[name*="group2"]:checked').val();
-//            var hitAndBlock = {
-//                "hit": hit,
-//                "block": block
-//            };
-//            var str = JSON.stringify(hitAndBlock);
-            
-
-//        $.ajax({           
-//            type: "POST",
-//            url: "Default.aspx/GetCurrentTime",
-//            /*data: '{name: "' + str + '" }'*/
-//            data: str,
-//            contentType: "application/json; charset=utf-8", // charset=utf-8 не обязательно, но стоит установить
-//            dataType: "json",
-//            success: OnSuccess,
-//            failure: function (response) {
-//                alert(response.d);
-//            }
-//        });
-
-//        function OnSuccess(response) {
-//            alert("Прибыли данные:" + response.d);
-//        }
-//    });
-
-//});
 
 
