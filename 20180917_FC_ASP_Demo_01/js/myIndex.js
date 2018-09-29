@@ -19,13 +19,13 @@
 
 
     $('#fight').click(function () {
-        var hit = $('#fight_form input[name*="group1"]:checked').val();
-        var block = $('#fight_form input[name*="group2"]:checked').val();
-        var hitAndBlock = {
+        let hit = $('#fight_form input[name*="group1"]:checked').val();
+        let block = $('#fight_form input[name*="group2"]:checked').val();
+        let hitAndBlock = {
             "hit": hit,
             "block": block
         };
-        var str = JSON.stringify(hitAndBlock);
+        let str = JSON.stringify(hitAndBlock);
 
         blockButton();
         oppMove();
@@ -56,11 +56,11 @@
 
     function amountOfHealth(hp, characterName) {
         $('#' + characterName + '_hp').text(hp);
-        var length = hp * 100 / allUserHp;
+        let length = hp * 100 / allUserHp;
         $('.' + characterName + '_block__hp__scale__change').css('width', length + '%');
 
-        var standardOfLiving = Math.round($('.' + characterName + '_block__hp__scale__change').width());
-        var colorScale = $('.' + characterName + '_block__hp__scale__change');
+        let standardOfLiving = Math.round($('.' + characterName + '_block__hp__scale__change').width());
+        let colorScale = $('.' + characterName + '_block__hp__scale__change');
         if (standardOfLiving <= 128 && standardOfLiving >= 79) {
             colorScale.css('background-color', 'yellow');
         } else if (standardOfLiving <= 78) {
