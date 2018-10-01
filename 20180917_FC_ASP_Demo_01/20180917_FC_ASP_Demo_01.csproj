@@ -71,6 +71,8 @@
   <ItemGroup>
     <Content Include="ClassDiagram\ClassDiagram1.cd" />
     <Content Include="packages.config" />
+    <Content Include="MasterPage\MasterPage.Master" />
+    <Content Include="Web\TestPage02.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,7 +83,8 @@
   <ItemGroup>
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
-    <Content Include="js\myIndex.js" />
+    <Content Include="js\Index.js" />
+    <Content Include="Web\TestPage01.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,10 +105,31 @@
     <Compile Include="AbstractClasses\Player.cs" />
     <Compile Include="AbstractClasses\PlayerCharacteristics.cs" />
     <Compile Include="Classes\MainGame.cs" />
+    <Compile Include="MasterPage\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\UI.cs" />
     <Compile Include="ENUMs\UIMsgText.cs" />
+    <Compile Include="Web\TestPage01.aspx.cs">
+      <DependentUpon>TestPage01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TestPage01.aspx.designer.cs">
+      <DependentUpon>TestPage01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\TestPage02.aspx.cs">
+      <DependentUpon>TestPage02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\TestPage02.aspx.designer.cs">
+      <DependentUpon>TestPage02.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="fonts\" />
