@@ -11,7 +11,7 @@ namespace _20180917_FC_ASP_Demo_01.Web
 {
 
 
-    public partial class TestPage02
+    public partial class firstPage
     {
     }
 }

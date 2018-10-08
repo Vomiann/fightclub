@@ -7,36 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _20180917_FC_ASP_Demo_01 {
+namespace _20180917_FC_ASP_Demo_01.MasterPage {
     
     
-    public partial class MasterPage {
+    public partial class masterPage {
         
         /// <summary>
-        /// head control.
+        /// firstPage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
-        /// <summary>
-        /// Page02 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Page02;
-        
-        /// <summary>
-        /// Page02Txt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Page02Txt;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder firstPage;
     }
 }

@@ -1,8 +1,8 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="_20180917_FC_ASP_Demo_01.MasterPage" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="_20180917_FC_ASP_Demo_01.MasterPage.masterPage" %>
 
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,17 @@
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div style="background-color: blueviolet">Test</div>
+    <header>
+        <div>
+            <span>Ссылка 1</span>
+            <span>Ссылка 2</span>
+        </div>
+    </header>
 
-    <asp:ContentPlaceHolder ID="Page02" runat="server">
+    <asp:ContentPlaceHolder ID="firstPage" runat="server">
     </asp:ContentPlaceHolder>
 
-    <asp:ContentPlaceHolder ID="Page02Txt" runat="server">
-    </asp:ContentPlaceHolder>
-    <br />
-    <br />
-    <em>Copyright © 2018.</em>
 </body>
 </html>
