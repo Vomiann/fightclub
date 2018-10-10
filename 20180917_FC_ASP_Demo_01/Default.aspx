@@ -11,6 +11,14 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Поединок</a></li>
+                    <li><a href="#">Статистика боев</a></li>
+                </ul>
+            </nav>
+        </header>
         <div class="container">
             <div class="row">
                 <div class="col-md-3 user_block">
