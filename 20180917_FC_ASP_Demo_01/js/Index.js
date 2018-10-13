@@ -19,13 +19,13 @@
 
 
     $('#fight').click(function () {
-        let hit = $('#fight_form input[name*="group1"]:checked').val();
-        let block = $('#fight_form input[name*="group2"]:checked').val();
-        let hitAndBlock = {
+        const hit = $('#fight_form input[name*="group1"]:checked').val();
+        const block = $('#fight_form input[name*="group2"]:checked').val();
+        const hitAndBlock = {
             "hit": hit,
             "block": block
         };
-        let str = JSON.stringify(hitAndBlock);
+        const fightRoundData = JSON.stringify(hitAndBlock);
 
         blockButton();
         oppMove();
@@ -35,7 +35,7 @@
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             url: "Default.aspx/round",
-            data: str,
+            data: fightRoundData,
             success: function (msg) {
                 msg = JSON.parse(msg.d);
                 unblockButton();
@@ -54,13 +54,15 @@
         });
     });
 
+
+
     function amountOfHealth(hp, characterName) {
         $('#' + characterName + '_hp').text(hp);
-        let length = hp * 100 / allUserHp;
+        const length = hp * 100 / allUserHp;
         $('.' + characterName + '_block__hp__scale__change').css('width', length + '%');
 
-        let standardOfLiving = Math.round($('.' + characterName + '_block__hp__scale__change').width());
-        let colorScale = $('.' + characterName + '_block__hp__scale__change');
+        const standardOfLiving = Math.round($('.' + characterName + '_block__hp__scale__change').width());
+        const colorScale = $('.' + characterName + '_block__hp__scale__change');
         if (standardOfLiving <= 128 && standardOfLiving >= 79) {
             colorScale.css('background-color', 'yellow');
         } else if (standardOfLiving <= 78) {

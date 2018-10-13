@@ -31,6 +31,10 @@
     color: rgb(103, 169, 255);
 }
 
+.container {
+    padding-top: 50px;
+}
+
 .user_block,
 .bot_block {
     padding-top: 20px;
@@ -66,12 +70,43 @@
     margin-bottom: 5px;
 }
 
+.charactersLeftBlock,
+.charactersRightBlock {
+    padding: 0;
+    text-align: center;
+}
+
+.equp img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+    .charactersLeftBlock,
+    .charactersRightBlock {
+        display: none;
+    }
+}
+
+.charactersCenterBlock {
+    padding: 0;
+}
+
+.charactersCenterBlock img {
+    width: 100%;
+    height: 100%;
+}
+    
+.rings {
+    font-size: 7px;
+}
+
 .center_block h3 {
     text-align: center;
 }
 
 .center_block__fight_info {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 .center_block__fight_info p {

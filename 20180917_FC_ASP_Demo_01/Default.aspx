@@ -21,33 +21,51 @@
         </header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 user_block">
+                <div class="col-sm-3 col-md-3 user_block">
                     <div class="user_block__name">
                         <span>User_1</span>
                     </div>
 
                     <div class="row user_block__hp">
-                        <div class="col-md-9">
+                        <div class="col-sm-10 col-md-9">
                             <div class="user_block__hp__scale">
 								<div class="user_block__hp__scale__change"></div>
 							</div>
                         </div>
-                        <div class="col-md-3">
-                            <span id="user_hp"></span>/<span id="all_user_hp"></span>
+                        <div class="col-sm-2 col-md-3">
+                            <span id="user_hp">?</span>/<span id="all_user_hp">?</span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
+                    <div class="row equip">
+                        <div class="col-md-3 charactersLeftBlock">
+                            <img src="../img/helmet.png" alt="" />
+                            <img src="../img/bracelet.png" alt="" />
+                            <img src="../img/left-weapon.png" alt="" />
+                            <img src="../img/breastplate.png" alt="" />
+                            <img src="../img/belt.png" alt="" />
+                        </div>
+                        <div class="col-md-6 charactersCenterBlock">
 							<img src="img/character.png">
 						</div>
-                        <div class="col-md-3"></div>
+                        <div class="col-md-3 charactersRightBlock">
+                            <img src="../img/earrings.png" alt="" />
+                            <img src="../img/necklace.png" alt="" />
+                            <div class="rings">
+                                <img src="../img/ring.png" width="18" height="18" alt="" />    
+                                <img src="../img/ring.png" width="18" height="18" alt="" />
+                                <img src="../img/ring.png" width="18" height="18" alt="" />
+                            </div>
+                            <img src="../img/gloves.png" alt="" />
+                            <img src="../img/right-weapon.png" alt="" />
+                            <img src="../img/leggings.png" alt="" />
+                            <img src="../img/boots.png" alt="" />
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="col-md-6 center_block">
+                <div class="col-sm-6 col-md-6 center_block">
                     <h3>Поединок</h3>
 					<p id="your_turn"></p>
 					<input type="button" id="start_game" value="Начать бой">
@@ -129,37 +147,51 @@
 							</table>
                         </div>
                         <hr>
-                        <div id="fight_log">
-							<p>fgsfhfgdhdfghdfg</p>
-							<p>fdhdfghdfghdfgh</p>
-							<p>fghdfghdfghfdghfdghgh</p>
-						</div>
+                        <div id="fight_log"></div>
                     </div>
                 </div>
 				
 				
-                <div class="col-md-3 bot_block">
+                <div class="col-sm-3 col-md-3 bot_block">
 					<div class="bot_block__name">
                         <span>Bot_1</span>
                     </div>
 
                     <div class="row bot_block__hp">
-                        <div class="col-md-9">
+                        <div class="col-sm-10 col-md-9">
                             <div class="bot_block__hp__scale">
 								<div class="bot_block__hp__scale__change"></div>
 							</div>
                         </div>
-                        <div class="col-md-3">
-                            <span id="bot_hp"></span>/<span id="all_bot_hp"></span>
+                        <div class="col-sm-2 col-md-3">
+                            <span id="bot_hp">?</span>/<span id="all_bot_hp">?</span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
+                    <div class="row equip">
+                        <div class="col-md-3 charactersLeftBlock">
+                            <img src="../img/helmet.png" alt="" />
+                            <img src="../img/bracelet.png" alt="" />
+                            <img src="../img/left-weapon.png" alt="" />
+                            <img src="../img/breastplate.png" alt="" />
+                            <img src="../img/belt.png" alt="" />
+                        </div>
+                        <div class="col-md-6 charactersCenterBlock">
 							<img src="img/character.png">
 						</div>
-                        <div class="col-md-3"></div>
+                        <div class="col-md-3 charactersRightBlock">
+                            <img src="../img/earrings.png" alt="" />
+                            <img src="../img/necklace.png" alt="" />
+                            <div class="rings">
+                                <img src="../img/ring.png" alt="" />    
+                                <img src="../img/ring.png" alt="" />
+                                <img src="../img/ring.png" alt="" />
+                            </div>
+                            <img src="../img/gloves.png" alt="" />
+                            <img src="../img/right-weapon.png" alt="" />
+                            <img src="../img/leggings.png" alt="" />
+                            <img src="../img/boots.png" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
