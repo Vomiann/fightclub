@@ -72,8 +72,8 @@
     <Content Include="ClassDiagram\ClassDiagram1.cd" />
     <Content Include="packages.config" />
     <Content Include="MasterPage\masterPage.Master" />
-    <Content Include="Web\firstPage.aspx" />
-    <Content Include="Web\secondPage.aspx" />
+    <Content Include="Web\combatPage.aspx" />
+    <Content Include="Web\statisticsPage.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -83,7 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\style.css" />
-    <Content Include="Default.aspx" />
     <Content Include="js\Index.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -92,13 +91,6 @@
     <Compile Include="Classes\Attack.cs" />
     <Compile Include="Classes\AIBot.cs" />
     <Compile Include="ENUMs\BodyPart.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Classes\Game.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Classes\JsonDataPlayers.cs" />
@@ -116,19 +108,19 @@
     <Compile Include="Classes\User.cs" />
     <Compile Include="Classes\UI.cs" />
     <Compile Include="ENUMs\UIMsgText.cs" />
-    <Compile Include="Web\firstPage.aspx.cs">
-      <DependentUpon>firstPage.aspx</DependentUpon>
+    <Compile Include="Web\combatPage.aspx.cs">
+      <DependentUpon>combatPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web\firstPage.aspx.designer.cs">
-      <DependentUpon>firstPage.aspx</DependentUpon>
+    <Compile Include="Web\combatPage.aspx.designer.cs">
+      <DependentUpon>combatPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web\secondPage.aspx.cs">
-      <DependentUpon>secondPage.aspx</DependentUpon>
+    <Compile Include="Web\statisticsPage.aspx.cs">
+      <DependentUpon>statisticsPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web\secondPage.aspx.designer.cs">
-      <DependentUpon>secondPage.aspx</DependentUpon>
+    <Compile Include="Web\statisticsPage.aspx.designer.cs">
+      <DependentUpon>statisticsPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

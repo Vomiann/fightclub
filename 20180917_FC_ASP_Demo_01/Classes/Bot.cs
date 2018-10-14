@@ -42,7 +42,5 @@ namespace _20180917_FC_ASP_Demo_01
 
         
         AIBot _aiBot;
-
-
     }
 }

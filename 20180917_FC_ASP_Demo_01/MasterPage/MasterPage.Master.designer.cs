@@ -13,12 +13,12 @@ namespace _20180917_FC_ASP_Demo_01.MasterPage {
     public partial class masterPage {
         
         /// <summary>
-        /// firstPage control.
+        /// PageContent01 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder firstPage;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder PageContent01;
     }
 }

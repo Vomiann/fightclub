@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _20180917_FC_ASP_Demo_01 {
+namespace _20180917_FC_ASP_Demo_01.Web {
     
     
-    public partial class Default {
+    public partial class statisticsPage {
     }
 }

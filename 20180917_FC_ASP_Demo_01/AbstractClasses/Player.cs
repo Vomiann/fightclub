@@ -25,24 +25,6 @@ namespace _20180917_FC_ASP_Demo_01
             }            
         }
 
-
-
-        //public abstract BodyPart Hit();   // Метод нанесения удара
-
-        //public abstract BodyPart[] Block(); // Метод выбора всех блоков (2х зон)
-
-        // Метод учета пошаговой последовательности боя
-        //public void StepGame()
-        //{
-        //    _lastAttack = new Attack();        //  создается новый экземпляр для записи последней выбранной атаки           
-        //    _lastAttack.hitSide = Hit();       //  записываем выбранную зону удара                                                          
-        //    BodyPart[] block = Block();       //  получаем все выбранные блоки  
-        //    _lastAttack.blockSide1 = block[0]; //  записываем 1ю выбранную зону блока
-        //    _lastAttack.blockSide2 = block[1]; //  записываем 2ю выбранную зону блока  
-        //}
-
-
-
         public void updateHealth(Attack otherUserAttack, int dmgEnemy)
         {           
             _breakDefense = CheckDamage(otherUserAttack);
@@ -129,10 +111,6 @@ namespace _20180917_FC_ASP_Demo_01
         
 
         public Attack _lastAttack; // переменная для записи последнего выбранного действия игрока (атака/блок)
-        private bool _breakDefense;
-
-        
-
-
+        private bool _breakDefense;       
     }
 }

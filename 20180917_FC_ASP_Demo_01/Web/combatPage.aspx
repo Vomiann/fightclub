@@ -1,25 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_20180917_FC_ASP_Demo_01.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage/masterPage.Master" AutoEventWireup="true" CodeBehind="combatPage.aspx.cs" Inherits="_20180917_FC_ASP_Demo_01.Web.combatPage" %>
 
-<!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Поединок</a></li>
-                    <li><a href="#">Статистика боев</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="container">
+<asp:Content ID="ContentCombatPage" ContentPlaceHolderID="PageContent01" runat="server">
+    <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-md-3 user_block">
                     <div class="user_block__name">
@@ -46,7 +28,7 @@
                             <img src="../img/belt.png" alt="" />
                         </div>
                         <div class="col-md-6 charactersCenterBlock">
-							<img src="img/character.png">
+							<img src="../img/character.png">
 						</div>
                         <div class="col-md-3 charactersRightBlock">
                             <img src="../img/earrings.png" alt="" />
@@ -177,7 +159,7 @@
                             <img src="../img/belt.png" alt="" />
                         </div>
                         <div class="col-md-6 charactersCenterBlock">
-							<img src="img/character.png">
+							<img src="../img/character.png">
 						</div>
                         <div class="col-md-3 charactersRightBlock">
                             <img src="../img/earrings.png" alt="" />
@@ -197,12 +179,5 @@
             </div>
         </div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="js/index.js"></script>
-    </body>
-</html>
-
-
-
-
-
-
+	<script src="../js/index.js"></script>
+</asp:Content>

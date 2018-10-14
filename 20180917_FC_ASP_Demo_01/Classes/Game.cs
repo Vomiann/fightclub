@@ -6,15 +6,7 @@ using System.Web;
 namespace _20180917_FC_ASP_Demo_01
 {
     class Game
-    {
-        //public Game(ref User user, ref Bot enemy)
-        //{            
-        //    _user = user;
-        //    _enemy = enemy;
-        //}
-       
-
-
+    {               
         public string Winner
         {
             get
@@ -32,7 +24,6 @@ namespace _20180917_FC_ASP_Demo_01
         }
 
         
-
         public void StepGame(string hit, string block, ref User user, ref Bot enemy)
         {            
             enemy.stepGameBot();

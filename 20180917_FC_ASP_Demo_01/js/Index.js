@@ -8,7 +8,7 @@
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: "Default.aspx/startGame",
+            url: "combatPage.aspx/startGame",
             success: function () {
                 startFight();
                 unblockFightMenu();
@@ -34,7 +34,7 @@
             type: "POST",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
-            url: "Default.aspx/round",
+            url: "combatPage.aspx/round",
             data: fightRoundData,
             success: function (msg) {
                 msg = JSON.parse(msg.d);
