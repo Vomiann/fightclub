@@ -28,7 +28,7 @@
                             <img src="../img/belt.png" alt="" />
                         </div>
                         <div class="col-md-6 charactersCenterBlock">
-							<img src="../img/character.png">
+							<img src="../img/user.png">
 						</div>
                         <div class="col-md-3 charactersRightBlock">
                             <img src="../img/earrings.png" alt="" />
@@ -159,7 +159,7 @@
                             <img src="../img/belt.png" alt="" />
                         </div>
                         <div class="col-md-6 charactersCenterBlock">
-							<img src="../img/character.png">
+							<img src="../img/bot.png">
 						</div>
                         <div class="col-md-3 charactersRightBlock">
                             <img src="../img/earrings.png" alt="" />
