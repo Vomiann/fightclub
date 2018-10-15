@@ -17,8 +17,8 @@ namespace _20180917_FC_ASP_Demo_01.Web
         [System.Web.Services.WebMethod]
         public static void startGame()
         {
-            _user = new User(10, 3, 4, 0, 0, "User_1");
-            _enemy = new Bot(10, 3, 4, 0, 0, "Bot_1");
+            _user = new User(50, 3, 6, 0, 0, "User_1");
+            _enemy = new Bot(50, 3, 6, 0, 0, "Bot_1");
         }
 
 
